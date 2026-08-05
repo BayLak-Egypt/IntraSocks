@@ -46,3 +46,10 @@
 ## 🛡️ License
 
 This project is open-source and available for educational and developmental purposes.
+
+
+---
+
+**Made with ❤️ by BayLak (Egypt <img src="https://github.com/user-attachments/assets/637a365d-98e8-4a47-814c-11965370d212" width="35" height="15" alt="Egypt flag"/>)**
+
+
