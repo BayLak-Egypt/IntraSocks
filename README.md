@@ -1,5 +1,8 @@
 # IntraSocks ⚡
 
+<img width="3464" height="3464" alt="Picsart_26-08-06_04-25-22-164 - صورة" src="https://github.com/user-attachments/assets/43f1fc8b-acbc-4877-af74-d180f2e29208" />
+
+
 **IntraSocks** is an innovative local proxy and MitM system that caches web content locally in a database for offline browsing. It features a fully draggable floating UI to track network traffic and analyze page assets in real-time with ultimate flexibility.
 
 ---
