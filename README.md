@@ -22,6 +22,11 @@
 * **HTTPS Support (MitM):** Dynamically generates local Root CA and site certificates to intercept and cache secure HTTPS traffic.
 * **Draggable Floating UI (`Logs Menu`):** A sleek, fixed-size floating button that moves freely across the screen (both horizontally and vertically) with position persistence (`localStorage`).
 * **Real-time Activity Logs:** Live tracking of resource loading, asset names, and statuses via a bottom status bar and a detailed logs modal.
+* **Integrated Proxy Server:** Easily start and stop a local proxy server with control over the Host and Port.
+* **Certificate Generation & Export:** A dedicated (`Generate Cert`) button to create and export digital security certificates directly to any chosen location with a single click.
+* **Cohesive Dark Theme:** A modern and unified design (`#0f172a` and `#1e293b`) covering buttons, dropdown menus, and control elements.
+* **Live Statistics Dashboard:** Direct tracking of unique domains, total data size, downloads, errors, and total requests.
+* **Flexible Plugins System:** Dynamic loading of custom functionality, enabling seamless extensibility without modifying the core codebase.
 
 ---
 
@@ -49,11 +54,28 @@
 
 ## 📦 Project Structure
 
-* `socks.py` - Main Python script containing the HTTP/HTTPS proxy server, database handler, and injected UI script.
-* `https_cache_proxy.db` - SQLite database for storing compressed web pages and assets.
-* `certs/` - Directory containing dynamically generated local SSL/TLS certificates.
+```text
+IntraSocks/
+│
+├── main.py              # Main GUI entry point, server management, and UI logic
+├── socks.py             # Proxy server backend, connection handling, and injection logic
+├── crt.py               # Security certificate (CA) generation and management
+├── db.py                # SQLite database management for caching and logging
+├── errorweb.py          # HTML error page templates
+├── inject.py            # Scripts for web content injection
+├── app_settings.json    # Persistent user settings (theme, window geometry, etc.)
+│
+├── images/
+│   └── 1.png            # Application logo and fixed-dimension assets
+│
+└── plugins/             # Extensible plugin architecture
+    ├── db_dir.py        # Database directory management and handling plugin
+    ├── db_viewer.py     # Database records and content viewer interface plugin
+    ├── filter_browser.py# Browser request filtering and handling plugin
+    ├── filter_download.py# Download progress and file transfer filtering plugin
+    └── filter_site.py   # Domain/site filtering and routing control plugin
+```
 
----
 
 ## 🛡️ License
 
