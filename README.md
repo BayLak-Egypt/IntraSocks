@@ -11,6 +11,11 @@
 
 ---
 
+<p align="center">
+
+<img width="602" height="638" alt="image" src="https://github.com/user-attachments/assets/a36e1a1a-3fab-433c-ba69-a8f4a77421e1" />
+</p>
+
 ## 🚀 Features
 
 * **Local Caching & Offline Browsing:** Automatically saves web content (HTML, images, scripts) into a high-performance SQLite database.
