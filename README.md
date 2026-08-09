@@ -33,7 +33,7 @@
 2. **Open your terminal** in the project directory.
 3. **Run the script:**
    ```bash
-   python3 socks.py
+   python3 main.py
    ```
 4. **Configure your browser or system** to use the local proxy:
    * **Host:** `127.0.0.1`
